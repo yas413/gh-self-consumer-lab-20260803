@@ -1,0 +1,14 @@
+name: GH-R60 caller collision probe
+description: Owned caller-side conflicting action canary
+
+outputs:
+  marker:
+    description: Exact caller marker
+    value: ${{ steps.marker.outputs.value }}
+
+runs:
+  using: composite
+  steps:
+    - id: marker
+      shell: bash
+      run: printf '%s\n' 'value=CALLER_COLLISION' >> "$GITHUB_OUTPUT"
