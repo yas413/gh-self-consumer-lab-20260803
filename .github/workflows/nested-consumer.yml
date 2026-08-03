@@ -1,0 +1,11 @@
+name: GH-R60 pinned nested provider consumer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  call-pinned-nested-provider:
+    uses: yas4133/gh-self-provider-lab-20260803/.github/workflows/nested-self.yml@1cb212b3d84e43a4210a540b999d46d4afaf06cd
