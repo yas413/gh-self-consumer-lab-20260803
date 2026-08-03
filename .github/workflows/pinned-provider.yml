@@ -1,0 +1,11 @@
+name: GH-R60 pinned provider consumer
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  call-pinned-provider:
+    uses: yas4133/gh-self-provider-lab-20260803/.github/workflows/self-reusable.yml@92fc87c732cb94544efbfc37b35d10cbbc861a47
